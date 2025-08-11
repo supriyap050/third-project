@@ -6,20 +6,20 @@ let count = 0;
       }
 
        function increment () {
-        count++;
-         showCount();
+         ++count;
+           showCount();
     }
 
       function decrement() {
-        count--;
-        showCount();
+       --count;
+          showCount();
       }
 
-      function add() {
+    function add() {
         let value = Number(document.getElementById("input").value);
         if (value) {
           count = count + value;
-          showCount();
+           showCount();
         }
       }
 
