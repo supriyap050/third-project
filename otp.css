@@ -1,0 +1,35 @@
+.notification{
+
+    background-color: rgb(233, 223, 223);
+    position: absolute;
+    right: 10px;
+    opacity: 0;
+    top: 30px;
+
+}
+.notification p{
+    margin: 10px;
+    color: blue;
+}
+.notification.show{
+    opacity: 1;
+}
+.notification .process{
+    height: 2px;
+    width: 100%;
+}  
+.process.start{
+background-color: brown;
+    animation: processBar 3s linear;
+}
+
+@keyframes processBar {
+    from{
+      width: 100%;
+    }
+    to{
+     width: 0;
+    }
+}
+    
+
