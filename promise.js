@@ -15,10 +15,16 @@
 
 let div = document.getElementById("recipes");
 
-fetch("https://dummyjson.com/recipes")
+function searchRecipe () {
+let query= document.getElementById("searchbox").value;
+fetch(`https://dummyjson.com/recipes/search?q=${query}`)
   .then((response) => response.json())
   .then((data) => {
       let cards = ""; 
+   if( data.recipes.length===0){
+ div.innerHTML="<h3>No Recipes found</h3>";
+ return;
+}    
   data.recipes.forEach((recipe) => {
       cards += `
       <div class="card">
@@ -33,5 +39,4 @@ fetch("https://dummyjson.com/recipes")
     });
     div.innerHTML = cards;
   });
-
-
+}

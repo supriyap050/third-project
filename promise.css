@@ -9,6 +9,25 @@ header h1{
   font-size: 30px;
   font-weight: bold;
 }
+ #searchbox {
+  padding: 10px 15px;
+  width: 200px;
+  border: 2px solid #ad0d42; 
+  border-radius: 20px;
+  font-size: 16px;
+}
+.btn{
+ padding: 10px 20px;
+  width: 100px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn:hover{
+  background: linear-gradient(green,yellow);
+}
 body {
       background: rgb(221, 182, 182);
       margin: 0;
@@ -58,7 +77,7 @@ body {
 
     .card-body button{
      background: rgb(201, 121, 174);
-    padding: 8px,15px;
+    padding: 8px 15px;
      border: none;
      font-size: 20px;
      cursor: pointer;
@@ -70,3 +89,4 @@ body {
     .card-body button:hover{
       background: rgb(216, 105, 105);
     }
+   
